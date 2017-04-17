@@ -1,0 +1,7 @@
+<?php $this->headTitle(sprintf('%d %s', $this->status, $this->reason)); ?>
+
+<h2>Oops!</h2>
+<h3>This is awkward.</h3>
+<p>We encountered a <?php echo $this->escapeHtml(sprintf('%d %s', $this->status, $this->reason)); ?> error.</p>
+
+<pre><code><?php var_dump($this->error); ?></code></pre>
